@@ -25,7 +25,7 @@ public class FlowerArea : MonoBehaviour
     /// </summary>
     public List<Flower> Flowers { get; private set; } = new List<Flower>();
 
-    private void Start()
+    private void Awake()
     {
         //Find all flowers that are children of this GameObject/ Transform
         FindChildFlowers(transform);

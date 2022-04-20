@@ -275,7 +275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &132020777622183314
 Transform:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 5360331958300676797}
   - component: {fileID: 8011218750561675848}
   - component: {fileID: 2929057673994019871}
-  - component: {fileID: 8485525360049914155}
+  - component: {fileID: 1191582601126087130}
   - component: {fileID: 2468872499663529606}
   - component: {fileID: 261115677021355601}
   m_Layer: 0
@@ -620,7 +620,7 @@ CapsuleCollider:
   m_Height: 0.03
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.025}
---- !u!114 &8485525360049914155
+--- !u!114 &1191582601126087130
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -636,12 +636,12 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 5000
-  m_agentCamera: {fileID: 6608397013397660446}
-  m_moveForce: 2
-  m_pitchSpeed: 100
-  m_yawSpeed: 100
-  m_beakTip: {fileID: 749827769155012578}
-  m_trainingMode: 1
+  moveForce: 2
+  pitchSpeed: 100
+  yawSpeed: 100
+  beakTip: {fileID: 749827769155012578}
+  agentCamera: {fileID: 6608397013397660446}
+  trainingMode: 1
 --- !u!114 &2468872499663529606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,7 +665,7 @@ MonoBehaviour:
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
-  m_InferenceDevice: 3
+  m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: Hummingbird
   TeamId: 0
