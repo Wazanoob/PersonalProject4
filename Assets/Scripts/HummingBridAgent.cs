@@ -207,12 +207,12 @@ public class HummingBridAgent : Agent
         else if (Input.GetKey(KeyCode.D)) left = transform.right;
 
         // Up/down
-        if (Input.GetKey(KeyCode.E)) up = transform.up;
-        else if (Input.GetKey(KeyCode.C)) up = -transform.up;
+        if (Input.GetKey(KeyCode.Space)) up = transform.up;
+        else if (Input.GetKey(KeyCode.E)) up = -transform.up;
 
         // Pitch up/down
-        if (Input.GetKey(KeyCode.UpArrow)) pitch = 1f;
-        else if (Input.GetKey(KeyCode.DownArrow)) pitch = -1f;
+        if (Input.GetKey(KeyCode.UpArrow)) pitch = -1f;
+        else if (Input.GetKey(KeyCode.DownArrow)) pitch = 1f;
 
         // Turn left/right
         if (Input.GetKey(KeyCode.LeftArrow)) yaw = -1f;
